@@ -1,0 +1,535 @@
+/* Google Material Design CSS Variables */
+:root {
+  /* Material Design 3 Color Scheme */
+  --md-sys-color-primary: #4caf50;
+  --md-sys-color-primary-container: #e8f5e9;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-on-primary-container: #1b5e20;
+  --md-sys-color-surface: #ffffff;
+  --md-sys-color-surface-container: #f5f5f5;
+  --md-sys-color-surface-variant: #e7e0ec;
+  --md-sys-color-on-surface: #1c1b1f;
+  --md-sys-color-on-surface-variant: #49454f;
+  --md-sys-color-background: #fefefe;
+  --md-sys-color-on-background: #1c1b1f;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-outline: #79747e;
+  --md-sys-color-outline-variant: #cac4d0;
+  --md-sys-color-shadow: rgba(0, 0, 0, 0.12);
+  --md-sys-color-scrim: rgba(0, 0, 0, 0.32);
+
+  /* Material Spacing Scale */
+  --md-space-xs: 4px;
+  --md-space-sm: 8px;
+  --md-space-md: 16px;
+  --md-space-lg: 24px;
+  --md-space-xl: 32px;
+  --md-space-2xl: 48px;
+
+  /* Material Border Radius */
+  --md-radius-xs: 4px;
+  --md-radius-sm: 8px;
+  --md-radius-md: 12px;
+  --md-radius-lg: 16px;
+  --md-radius-xl: 20px;
+
+  /* Material Elevation */
+  --md-elevation-level1: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.05);
+  --md-elevation-level2: 0px 2px 6px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  --md-elevation-level3: 0px 4px 8px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.08);
+  --md-elevation-level4: 0px 6px 10px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --md-elevation-level5: 0px 8px 12px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Material Design Typography */
+.text-display-large {
+  font-size: 57px;
+  line-height: 64px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
+.text-display-medium {
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+.text-display-small {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.text-headline-large {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.text-headline-medium {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.text-headline-small {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.text-title-large {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.text-title-medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+
+.text-title-small {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.text-body-large {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.text-body-medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+.text-body-small {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.text-label-large {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.text-label-medium {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.text-label-small {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Mantine Material Overrides */
+.mantine-AppShell-main {
+  background-color: var(--md-sys-color-background) !important;
+  overflow-x: hidden !important;
+  padding: 0 !important;
+  padding-top: var(--md-space-xl) !important;
+}
+
+.mantine-AppShell-header {
+  background-color: var(--md-sys-color-surface) !important;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant) !important;
+  box-shadow: var(--md-elevation-level2) !important;
+  position: relative !important;
+  z-index: 1000 !important;
+  padding-top: env(safe-area-inset-top, 0px) !important;
+}
+
+.mantine-Card-root {
+  background-color: var(--md-sys-color-surface) !important;
+  border: 1px solid var(--md-sys-color-outline-variant) !important;
+  border-radius: var(--md-radius-lg) !important;
+  box-shadow: var(--md-elevation-level1) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1) !important;
+  overflow: hidden !important;
+  min-height: 160px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mantine-Card-root:hover {
+  box-shadow: var(--md-elevation-level2) !important;
+}
+
+.mantine-Button-root {
+  font-weight: 500 !important;
+  text-transform: none !important;
+  border-radius: var(--md-radius-md) !important;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1) !important;
+  min-height: 40px !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+}
+
+.mantine-Button-root[data-variant="filled"] {
+  background-color: var(--md-sys-color-primary) !important;
+  color: var(--md-sys-color-on-primary) !important;
+  box-shadow: var(--md-elevation-level1) !important;
+}
+
+.mantine-Button-root[data-variant="filled"]:hover {
+  background-color: var(--md-sys-color-primary) !important;
+  box-shadow: var(--md-elevation-level2) !important;
+}
+
+.mantine-Button-root[data-variant="outline"] {
+  border-color: var(--md-sys-color-outline) !important;
+  color: var(--md-sys-color-primary) !important;
+}
+
+.mantine-TextInput-input,
+.mantine-Select-input {
+  min-height: 56px !important;
+  border-radius: var(--md-radius-md) !important;
+  border: 1px solid var(--md-sys-color-outline) !important;
+  background-color: var(--md-sys-color-surface) !important;
+  color: var(--md-sys-color-on-surface) !important;
+  font-size: 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+.mantine-TextInput-input:focus,
+.mantine-Select-input:focus {
+  border-color: var(--md-sys-color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2) !important;
+}
+
+.mantine-TextInput-label,
+.mantine-Select-label {
+  color: var(--md-sys-color-on-surface-variant) !important;
+  font-weight: 500 !important;
+  margin-bottom: var(--md-space-sm) !important;
+}
+
+.mantine-Modal-content {
+  background-color: var(--md-sys-color-surface) !important;
+  border-radius: var(--md-radius-xl) !important;
+  box-shadow: var(--md-elevation-level3) !important;
+}
+
+.mantine-Modal-header {
+  background-color: var(--md-sys-color-surface) !important;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant) !important;
+}
+
+.mantine-Table-tr {
+  border-bottom-color: var(--md-sys-color-outline-variant) !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.mantine-Table-tr:hover {
+  background-color: var(--md-sys-color-surface-variant) !important;
+}
+
+.mantine-Table-th {
+  color: var(--md-sys-color-on-surface-variant) !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.mantine-Title-root {
+  color: var(--md-sys-color-on-surface) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.mantine-Text-root[data-dimmed] {
+  color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.mantine-Progress-bar {
+  background-color: var(--md-sys-color-primary) !important;
+}
+
+.mantine-SegmentedControl-root {
+  background-color: var(--md-sys-color-surface-variant) !important;
+  border-radius: var(--md-radius-md) !important;
+}
+
+.mantine-SegmentedControl-label {
+  color: var(--md-sys-color-on-surface-variant) !important;
+  font-weight: 500 !important;
+}
+
+.mantine-SegmentedControl-label[data-active] {
+  background-color: var(--md-sys-color-primary) !important;
+  color: var(--md-sys-color-on-primary) !important;
+}
+
+.mantine-Badge-root {
+  border-radius: var(--md-radius-sm) !important;
+  font-weight: 500 !important;
+}
+
+.mantine-SimpleGrid-root {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.mantine-Group-root {
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+}
+
+.mantine-ActionIcon-root {
+  flex-shrink: 0 !important;
+}
+
+/* Mobile-only responsive utilities */
+@media (max-width: 768px) {
+  .mantine-Card-root {
+    margin: 0 !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  .mantine-Button-root {
+    min-height: 48px !important;
+    font-size: 16px !important;
+    padding: 0 16px !important;
+  }
+
+  .mantine-ActionIcon-root {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Responsive grid layouts */
+  .mantine-SimpleGrid-root {
+    gap: var(--md-space-md) !important;
+  }
+
+  /* Touch-friendly spacing */
+  .mantine-Stack-root {
+    gap: var(--md-space-md) !important;
+  }
+
+  /* Mobile typography adjustments */
+  .text-title-large {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .text-headline-small {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  /* Prevent horizontal overflow */
+  .mantine-AppShell-main {
+    overflow-x: hidden !important;
+    padding: var(--md-space-sm) var(--md-space-sm) 0 !important;
+    padding-top: var(--md-space-md) !important;
+  }
+
+  .mantine-AppShell-header {
+    padding: 0 var(--md-space-sm) !important;
+  }
+}
+
+/* Force mobile layout - prevent desktop styles */
+@media (min-width: 769px) {
+
+  .mantine-AppShell-main,
+  .mantine-AppShell-header,
+  .mantine-Card-root,
+  .mantine-Button-root,
+  .mantine-ActionIcon-root {
+    transform: scale(0.9) !important;
+    max-width: 375px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .mantine-Card-root {
+    margin: 0 var(--md-space-sm) !important;
+    padding: var(--md-space-md) !important;
+  }
+
+  .mantine-Button-root {
+    min-height: 48px !important;
+    font-size: 16px !important;
+    padding: 0 12px !important;
+  }
+
+  .mantine-TextInput-input,
+  .mantine-Select-input {
+    min-height: 56px !important;
+    font-size: 16px !important;
+  }
+
+  /* Compact date filter on mobile */
+  .mantine-DatePickerInput-input {
+    font-size: 14px !important;
+  }
+
+  /* Responsive modal for small screens */
+  .mantine-Modal-content {
+    margin: var(--md-space-sm) !important;
+    width: calc(100vw - 32px) !important;
+    max-height: 85vh !important;
+  }
+}
+
+/* Touch-friendly interaction */
+@media (pointer: coarse) {
+
+  .mantine-Button-root,
+  .mantine-ActionIcon-root,
+  .mantine-TextInput-input,
+  .mantine-Select-input,
+  .mantine-Checkbox-input {
+    min-height: 48px !important;
+  }
+
+  .mantine-ActionIcon-root {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Larger touch targets for interactive elements */
+  .mantine-SegmentedControl-label {
+    min-height: 40px !important;
+    padding: 0 16px !important;
+  }
+
+  /* Enhanced touch feedback */
+  .mantine-Button-root:active,
+  .mantine-ActionIcon-root:active,
+  .mantine-TextInput-input:focus,
+  .mantine-Select-input:focus {
+    transform: scale(0.98) !important;
+    transition: transform 0.1s ease !important;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .mantine-Card-root {
+    border-width: 0.5px !important;
+  }
+
+  .mantine-TextInput-input,
+  .mantine-Select-input {
+    border-width: 0.5px !important;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .mantine-Modal-content {
+    max-height: 80vh !important;
+  }
+
+  .mantine-Modal-body {
+    padding: var(--md-space-md) !important;
+  }
+
+  .mantine-Stack-root {
+    gap: var(--md-space-sm) !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .mantine-Card-root,
+  .mantine-Button-root,
+  .mantine-TextInput-input,
+  .mantine-Select-input,
+  .mantine-Modal-content {
+    transition: none !important;
+  }
+
+  /* Disable animations */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Material Design 3 dark theme colors can be added here */
+}
+
+/* Print styles */
+@media print {
+
+  .mantine-AppShell-header,
+  .mantine-ActionIcon-root,
+  .mantine-Button-root:not(.print-visible) {
+    display: none !important;
+  }
+
+  .mantine-Card-root {
+    break-inside: avoid !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+}

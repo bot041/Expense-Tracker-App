@@ -1,0 +1,6 @@
+{
+    "appId": "com.antigravity.expenses",
+    "appName": "AntigravityExpenses",
+    "webDir": "dist",
+    "bundledWebRuntime": false
+}
