@@ -1,3 +1,5 @@
+Note : This app still in Developement Stage, users can test it by installing APK (Android only) or In Android Studio
+
 # 💰 Expense Tracker App
 A modern and simple **Expense Tracker Application** built using **Vite + TypeScript** and packaged for Android using **Capacitor**.
 This project helps users manage daily expenses, track transactions, and maintain spending records efficiently.
@@ -74,6 +76,6 @@ For major changes, please open an issue first to discuss improvements.
 This project is open-source and available for educational use.
 
 👤 Author
-Developed by bot041
+Developed by Bhuvan Kambad
 GitHub: https://github.com/bot041
 Email: bkambad041@gmail.com  
